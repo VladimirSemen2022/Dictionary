@@ -1,9 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Text.Encodings.Web;
 using System.Text.Json;
-using System.Text.Unicode;
 using System.Threading;
 
 namespace Dictionary
@@ -25,7 +23,7 @@ namespace Dictionary
                     newDictionary = JsonSerializer.Deserialize<List<Words>>(newStr);
                 }
                 Console.Clear();
-                Console.WriteLine("----------THE DICTIONARY-----------");
+                Console.WriteLine("-----------THE ENGLISH DICTIONARY-----------");
                 Console.WriteLine("Input number of operation you want to do:");
                 Console.WriteLine("0. Exit;");
                 Console.WriteLine("1. Search and show the english word and his translate;");
